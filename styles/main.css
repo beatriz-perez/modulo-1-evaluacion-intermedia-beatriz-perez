@@ -6,13 +6,57 @@
     margin:0;
     padding:0;
 }
+.wrapper{
+    position: relative;
+}
 
 /*Estilos Header -----------------------------------------------------------------------*/
-
+/*Altura de header fijo= 10 + 61 + 10 + 16 + 13 = 110px --------------------------------*/
+.header{
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-container{
+    display: inline-block;
+    width: 155px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 100%;
+}
+.menu{
+    color: #4a4a4a;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+.menu-item{
+    display: inline-block;
+    margin-right: 20px;
+}
 
 /*Estilos Main -------------------------------------------------------------------------*/
+.main{
+    background-color: #3CDBC0;
+    position: absolute;
+    top: 110px;
+    width: 100vw;
+    height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
+}
+.claim{
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    width: 50vw;
+}
 
 /*Estilos Footer -----------------------------------------------------------------------*/
 
@@ -21,6 +65,8 @@
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /*TABLET -------------------------------------------------------------------------------*/
 @media all and (min-width: 768px){
+
+    
 
 
 
